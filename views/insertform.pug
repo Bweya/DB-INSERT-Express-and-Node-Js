@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Insert details to database
+  form(method="POST", action="/", width="200px", style="border:2px red solid")
+    p
+    span first name
+    input(type="text", name="fname")
+    p
+    span age
+    span
+    input(type="text", name="fage")
+    p
+    button(type="submit") Submit
